@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.1.0.555618" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+    <PackageReference Include="MvvmCross" Version="6.1.2" />
+    <PackageReference Include="MvvmCross.Forms" Version="6.1.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+    <PackageReference Include="FubarCoder.RestSharp.Portable.Core" Version="4.0.8" />
+    <PackageReference Include="FubarCoder.RestSharp.Portable.HttpClient" Version="4.0.8" />
+    <PackageReference Include="Acr.UserDialogs" Version="7.0.26" />
+    <PackageReference Include="modernhttpclient" Version="2.4.2" />
+    <PackageReference Include="MvvmCross.Plugin.Messenger" Version="5.7.0" />
+    <PackageReference Include="MvvmCross.Platform" Version="5.7.0" />
+    <PackageReference Include="Xam.Plugin.Connectivity" Version="3.2.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
+    <Folder Include="Helper\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Models\" />
+    <Folder Include="WebServices\" />
+    <Folder Include="Utility\" />
+    <Folder Include="ViewModels\MainPageViewModel\" />
+    <Folder Include="Models\MainPageModels\" />
+    <Folder Include="ServiceResponce\" />
+    <Folder Include="Helper\HelperInterface\" />
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="FormsApp.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Views\DashBoardMenuItem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\DashBoard.xaml.cs">
+      <DependentUpon>DashBoard.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\DashBoardDetail.xaml.cs">
+      <DependentUpon>DashBoardDetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\DashBoardMaster.xaml.cs">
+      <DependentUpon>DashBoardMaster.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>

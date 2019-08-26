@@ -1,0 +1,59 @@
+﻿<Properties StartupConfiguration="{161F0A2E-177A-4779-8F24-A06FA6F7D267}|Default">
+  <MonoDevelop.Ide.ItemProperties.TheMovieHub.Android AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.my_devicej" />
+  <MonoDevelop.Ide.ItemProperties.TheMovieHub.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.8CF2F0F1-8728-4588-8395-F0130FED3336" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TheMovieHub/ViewModels/MainPageViewModel/MainDetailPageMasterViewModel.cs">
+    <Files>
+      <File FileName="TheMovieHub/Views/MainPage.xaml" Line="55" Column="6" />
+      <File FileName="TheMovieHub/ViewModels/MainPageViewModel/MainDetailPageMasterViewModel.cs" Line="41" Column="19" />
+      <File FileName="TheMovieHub/ViewModels/MainPageViewModel/MainPageViewModel.cs" Line="263" Column="71" />
+      <File FileName="TheMovieHub/Views/DashBoardDetail.xaml" Line="1" Column="1" />
+      <File FileName="TheMovieHub/WebServices/MovieDetailsService.cs" />
+      <File FileName="TheMovieHub/Utility/Constants.cs" />
+      <File FileName="TheMovieHub/Views/DashBoardMaster.xaml" Line="13" Column="23" />
+      <File FileName="TheMovieHub/ViewModels/MainPageViewModel/MainDetailPageDetailsViewModel.cs" />
+      <File FileName="TheMovieHub/Helper/HelperInterface/HorizontalList.cs" />
+      <File FileName="TheMovieHub/WebServices/BaseWebService.cs" />
+      <File FileName="TheMovieHub/Views/MainPage.xaml.cs" />
+      <File FileName="TheMovieHub/Models/MainPageModels/GenresDetails.cs" Line="12" Column="32" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TheMovieHub" expanded="True">
+            <Node name="TheMovieHub" expanded="True">
+              <Node name="Models" expanded="True">
+                <Node name="MainPageModels" expanded="True" />
+              </Node>
+              <Node name="ViewModels" expanded="True">
+                <Node name="MainPageViewModel" expanded="True">
+                  <Node name="MainDetailPageMasterViewModel.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="DashBoard.xaml" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="TheMovieHub.Android" expanded="True">
+              <Node name="Properties" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="layout" expanded="True" />
+                <Node name="values" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/nilesh.jadhav/Projects/TheMovieHub/TheMovieHub/Models/MainPageModels/MovieDetails.cs" relfile="TheMovieHub/Models/MainPageModels/MovieDetails.cs" line="65" column="1" />
+      <Breakpoint file="/Users/nilesh.jadhav/Projects/TheMovieHub/TheMovieHub/Models/MainPageModels/MovieDetails.cs" relfile="TheMovieHub/Models/MainPageModels/MovieDetails.cs" line="73" column="1" />
+      <Catchpoint exceptionName="System.Exception" includeSubclasses="True" />
+      <Breakpoint file="/Users/nilesh.jadhav/Projects/TheMovieHub/TheMovieHub.Android/obj/Debug/android/manifest/AndroidManifest.xml" relfile="TheMovieHub.Android/obj/Debug/android/manifest/AndroidManifest.xml" line="10" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

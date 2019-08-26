@@ -1,0 +1,15 @@
+/Users/nilesh.jadhav/Projects/TheMovieHub/TheMovieHub/bin/Debug/netstandard2.0/TheMovieHub.deps.json
+/Users/nilesh.jadhav/Projects/TheMovieHub/TheMovieHub/bin/Debug/netstandard2.0/TheMovieHub.dll
+/Users/nilesh.jadhav/Projects/TheMovieHub/TheMovieHub/bin/Debug/netstandard2.0/TheMovieHub.pdb
+/Users/nilesh.jadhav/Projects/TheMovieHub/TheMovieHub/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/nilesh.jadhav/Projects/TheMovieHub/TheMovieHub/obj/Debug/netstandard2.0/Views/DashBoard.xaml.g.cs
+/Users/nilesh.jadhav/Projects/TheMovieHub/TheMovieHub/obj/Debug/netstandard2.0/Views/DashBoardDetail.xaml.g.cs
+/Users/nilesh.jadhav/Projects/TheMovieHub/TheMovieHub/obj/Debug/netstandard2.0/Views/DashBoardMaster.xaml.g.cs
+/Users/nilesh.jadhav/Projects/TheMovieHub/TheMovieHub/obj/Debug/netstandard2.0/Views/MainPage.xaml.g.cs
+/Users/nilesh.jadhav/Projects/TheMovieHub/TheMovieHub/obj/Debug/netstandard2.0/TheMovieHub.csproj.CoreCompileInputs.cache
+/Users/nilesh.jadhav/Projects/TheMovieHub/TheMovieHub/obj/Debug/netstandard2.0/TheMovieHub.AssemblyInfoInputs.cache
+/Users/nilesh.jadhav/Projects/TheMovieHub/TheMovieHub/obj/Debug/netstandard2.0/TheMovieHub.AssemblyInfo.cs
+/Users/nilesh.jadhav/Projects/TheMovieHub/TheMovieHub/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/nilesh.jadhav/Projects/TheMovieHub/TheMovieHub/obj/Debug/netstandard2.0/TheMovieHub.dll
+/Users/nilesh.jadhav/Projects/TheMovieHub/TheMovieHub/obj/Debug/netstandard2.0/TheMovieHub.pdb
+/Users/nilesh.jadhav/Projects/TheMovieHub/TheMovieHub/obj/Debug/netstandard2.0/TheMovieHub.csprojAssemblyReference.cache

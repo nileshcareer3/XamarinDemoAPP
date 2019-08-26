@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<View:MvxMasterDetailPage
+    xmlns:View="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ViewModel="clr-namespace:TheMovieHub.ViewModels.MainPageViewModel"
+    x:TypeArguments="ViewModel:MainDashBoardViewModel"
+    x:Class="TheMovieHub.Views.DashBoard"
+    xmlns:pages="clr-namespace:TheMovieHub.Views"
+    NavigationPage.HasNavigationBar="False">
+    <MasterDetailPage.Master>
+        <pages:DashBoardMaster />
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <pages:MainPage />
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</View:MvxMasterDetailPage>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<View:MvxContentPage
+    xmlns:View="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms" 
+    x:TypeArguments="ViewModels:MainPageViewModel"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ViewModels="clr-namespace:TheMovieHub.ViewModels.MainPageViewModel"
+             xmlns:Controls="clr-namespace:TheMovieHub.Helper.HelperInterface"
+             x:Class="TheMovieHub.Views.MainPage"
+             Title="The Movie Hub"
+            >
+    <ContentPage.BindingContext>
+        <ViewModels:MainPageViewModel/>
+    </ContentPage.BindingContext>
+     <ContentPage.Content>
+        <StackLayout Orientation="Vertical" BackgroundColor="LightGray">
+                     
+              <StackLayout Orientation="Horizontal" HeightRequest="55">
+                    <SearchBar   Placeholder="Search..."  HorizontalOptions="StartAndExpand"  Text="{Binding TxtSearchTextChanged }"/>   
+             </StackLayout>
+             <ListView x:Name="listView" SeparatorVisibility="None" ItemsSource="{Binding MovieList,Mode=TwoWay}" SelectedItem="{Binding SelectedMovie, Mode=TwoWay}" BackgroundColor="LightGray"
+              RowHeight="150" >
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame CornerRadius="10" Margin="5">
+                                <StackLayout Orientation="Horizontal"  BackgroundColor="White">
+                                    <Image Source="{Binding ImagePath}">
+                                    </Image>
+                                    <StackLayout Orientation="Vertical">
+                                        <Label FontSize="12" Text="{Binding OriginalTitle}"
+                               FontAttributes="Bold" MaxLines="1"/>
+                                        <Label  FontSize="10" Text="{Binding Overview}"
+                               FontAttributes="None" MaxLines="2" />
+                                        <Label FontSize="10" Text="{Binding ShowVoteAverage}"
+                               FontAttributes="Bold" MaxLines="1"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+            <Grid HeightRequest="55"> 
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                   <Picker Grid.Column="0" BackgroundColor="#FF1493" Title="Genres" TextColor="White" TitleColor="white"
+                            ItemsSource="{Binding GenersList}" ItemDisplayBinding="{Binding GenerName}"
+                            SelectedItem="{Binding SelectedGenres}"  />
+                         
+                             <Picker Grid.Column="1"  BackgroundColor="#FF1493" Title="Sort By" TextColor="White" TitleColor="white"
+                            ItemsSource="{Binding FilterList}" ItemDisplayBinding="{Binding ValueName}"
+                            SelectedItem="{Binding SelectedFilterType}" />
+                            
+            </Grid>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</View:MvxContentPage>

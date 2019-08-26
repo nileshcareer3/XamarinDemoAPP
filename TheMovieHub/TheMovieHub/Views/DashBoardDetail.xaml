@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<View:MvxContentPage
+    xmlns:View="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ViewModel="clr-namespace:TheMovieHub.ViewModels.MainPageViewModel"
+    x:TypeArguments="ViewModel:MainDetailPageDetailsViewModel"
+    x:Class="TheMovieHub.Views.DashBoardDetail" Title="Movie Detail">
+    <ContentPage.BindingContext>
+        <ViewModel:MainDetailPageDetailsViewModel/>
+    </ContentPage.BindingContext>
+     <ContentPage.Content>
+        <StackLayout Padding="10">
+           <StackLayout  HorizontalOptions="Center" >
+              <Label FontSize="12" Text="{Binding MovieTitle}" FontAttributes="Bold" MaxLines="1"  Margin="15" />
+            </StackLayout>
+             <StackLayout  HorizontalOptions="Center" BackgroundColor="White">
+                         <Image Source="{Binding ImagePath}" />
+                    </StackLayout>
+            <StackLayout Margin="10">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" FontSize="12" Text="{ Binding ReleaseDate }" FontAttributes="Bold" MaxLines="1"  Margin="10"  HorizontalOptions="Start"/>
+                    <Label Grid.Column="1" FontSize="12" Text="{ Binding UserRating  }"  FontAttributes="Bold" MaxLines="1"  Margin="10" HorizontalOptions="End"/>
+                </Grid>
+                
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+               <Frame BackgroundColor="White">
+                    <Label  FontSize="14" Text="{Binding Overview}" FontAttributes="None"   Margin="13" />
+               </Frame> 
+            </StackLayout>                           
+        </StackLayout>
+    </ContentPage.Content>
+   
+</View:MvxContentPage>
